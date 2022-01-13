@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {FoodCategory} from "../food-category";
 
 @Component({
   selector: 'ens-food-categories-submenu',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./food-categories-submenu.component.scss']
 })
 export class FoodCategoriesSubmenuComponent implements OnInit {
-  newSelectedCategory?: string;
+  @Input() category?: FoodCategory;
+
   constructor() { }
 
   ngOnInit(): void {

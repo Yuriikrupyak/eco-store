@@ -1,7 +1,9 @@
-  <div class="food-items-wrapper"  *ngIf="categories">
-    <div class="food-items"*ngFor="let category of categories" [class.selected]="category === selectedCategory" (click)="onSelect(category)" >
-      <div [style]="categoryNameColor">{{category.name}}</div>
-      <img src="assets/{{category.src}}" [style]="categoryImgStyle">
-    </div>
+<div class="food-items-wrapper" *ngIf="categories">
+  <div class="food-items" *ngFor="let category of categories" [class.selected]="category === selectedCategory"
+       (click)="onSelect(category)">
+    <div [style]="categoryNameColor">{{category.name}}</div>
+    <img src="assets/{{category.src}}" [style]="categoryImgStyle">
+    <ens-food-categories-submenu [category]="selectedCategory"></ens-food-categories-submenu>
   </div>
+</div>
 

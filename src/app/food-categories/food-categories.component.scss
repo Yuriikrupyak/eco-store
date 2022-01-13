@@ -22,7 +22,7 @@
   left: .1em;
 }
 
-
-input {
-  padding: .5rem;
+.food-items:hover.selected {
+  background-color: #d0d0d0;
+  color: white;
 }

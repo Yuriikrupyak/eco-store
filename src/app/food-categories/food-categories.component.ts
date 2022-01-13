@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { foodCategoriesEnum } from "../food-categories-enum";
-import {FoodCategory } from "../food-category";
-
+import { FoodCategory } from "../food-category";
 @Component({
   selector: 'ens-food-categories',
   templateUrl: './food-categories.component.html',
@@ -18,6 +17,7 @@ export class FoodCategoriesComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
   onSelect(category: FoodCategory): void{
     this.selectedCategory = category;
   }

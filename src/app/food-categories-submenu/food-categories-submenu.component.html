@@ -1,9 +1,16 @@
-<div class="dropdownCategories" *ngIf=" newSelectedCategory">
-  <select [(ngModel)]=" newSelectedCategory" name="choose item" id="selected-item">
+
+<div class="dropdownCategories" *ngIf="category">
+  <select name="choose item" id="selected-item">
     <option value="">Please choose an item</option>
     <option value="apples">Apples</option>
     <option value="pears">Pears</option>
     <option value="bananas">Bananas</option>
     <option value="avocados">avocados</option>
   </select>
+    <h3>{{category.name | uppercase}} Category Details</h3>
+    <div><span>id:</span>{{category.id}}</div>
+    <div>
+      <label for="category-name">Category name: </label>
+      <input id="category-name" [(ngModel)]="category.name" placeholder="name">
+    </div>
 </div>
