@@ -1,12 +1,12 @@
 <div class="body-markup">
   <header class="header">
     <h1>{{title | uppercase}}</h1>
-    <ens-food-categories></ens-food-categories>
   </header>
   <div class="content-wrapper">
-    <div class="right-nav"></div>
-    <div class="main-nav"></div>
-    <div class="left-nav"></div>
+    <div class="main-nav">
+      <ens-food-categories></ens-food-categories>
+      <ens-orders-table></ens-orders-table>
+    </div>
   </div>
   <footer></footer>
 </div>

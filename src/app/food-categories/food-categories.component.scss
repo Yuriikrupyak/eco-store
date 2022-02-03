@@ -7,7 +7,7 @@
   padding-bottom: 20px;
 }
 
-.food-items {
+.food-categories {
   cursor: pointer;
   position: relative;
   left: 0;
@@ -16,13 +16,14 @@
   padding: 1em;
   border-radius: 4px;
 }
-.food-items:hover {
+.food-categories:hover {
   color: #2c3a41;
   background-color: #e6e6e6;
   left: .1em;
 }
 
-.food-items:hover.selected {
+.food-categories:hover.selected {
   background-color: #d0d0d0;
   color: white;
+  top: 1em;
 }

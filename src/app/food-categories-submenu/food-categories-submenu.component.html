@@ -1,16 +1,63 @@
-
-<div class="dropdownCategories" *ngIf="category">
-  <select name="choose item" id="selected-item">
+<div class="dropdownItems " *ngIf="category">
+  <select *ngIf="category.id === 1" name="choose item" id="fruits-items">
     <option value="">Please choose an item</option>
     <option value="apples">Apples</option>
     <option value="pears">Pears</option>
     <option value="bananas">Bananas</option>
     <option value="avocados">avocados</option>
+    <option value="lemon">Lemon</option>
+    <option value="orange">Orange</option>
+    <option value="mandarin">Mandarin</option>
+    <option value="mango">Mango</option>
+    <option value="papaya">papaya</option>
+    <option value="plum">plum</option>
   </select>
-    <h3>{{category.name | uppercase}} Category Details</h3>
-    <div><span>id:</span>{{category.id}}</div>
-    <div>
-      <label for="category-name">Category name: </label>
-      <input id="category-name" [(ngModel)]="category.name" placeholder="name">
-    </div>
+  <select *ngIf="category.id === 2" name="choose item" id="vegetables-items">
+    <option value="">Please choose an item</option>
+    <option value="tomato">Tomato</option>
+    <option value="cucumbers">Cucumbers</option>
+    <option value="cabbages">Cabbages</option>
+    <option value="broccoli">Broccoli</option>
+    <option value="potatoes">Potatoes</option>
+    <option value="beetroot">Beetroot</option>
+    <option value="carrot">Carrot</option>
+    <option value="celery">Celery</option>
+    <option value="eggplant">Eggplant</option>
+    <option value="garlic">Garlic</option>
+    <option value="onion">Onion</option>
+  </select>
+  <select *ngIf="category.id === 3" name="choose item" id="Vegan-food-items">
+    <option value="">Please choose an item</option>
+    <option value="tofu">Tofu</option>
+    <option value="tempeh">Tempeh</option>
+    <option value="seitan">Seitan</option>
+    <option value="veggie Burgers">Veggie Burgers</option>
+    <option value="mock Sausages">Mock Sausages</option>
+    <option value="plant-Based Jerkys">Plant-Based Jerkys</option>
+    <option value="nutritional Yeas">Nutritional Yeas</option>
+    <option value="high-End Fermented Nut Cheese">High-End Fermented Nut Cheese</option>
+  </select>
+  <select *ngIf="category.id === 4" name="choose item" id="drinks-items">
+    <option value="">Please choose an item</option>
+    <option value="fresh juices">Fresh juices</option>
+    <option value="mineral water">Mineral water</option>
+    <option value="coconut milk">Coconut milk</option>
+    <option value="non-dairy coffee creamers">Non-dairy coffee creamers</option>
+  </select>
+  <select *ngIf="category.id === 5" name="choose item" id="Seeds-items">
+    <option value="">Please choose an item</option>
+    <option value="quinoa">Quinoa</option>
+    <option value="oats">oats</option>
+    <option value="rice">Rice</option>
+    <option value="farro">Farro</option>
+    <option value="bulgur">Bulgur</option>
+    <option value="buckwheat">Buckwheat</option>
+    <option value="barley">Barley</option>
+  </select>
+
+<!--    <div><span>id:</span>{{category.id}}</div>-->
+<!--    <div>-->
+<!--      <label for="category-name">Category name: </label>-->
+<!--      <input id="category-name" [(ngModel)]="category.name" placeholder="name">-->
+<!--    </div>-->
 </div>
